@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/dashboard-menu.css">
+    <link rel="stylesheet" href="./css/student-dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <title>Student</title>
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+
+            <li class="profile">
+                <div class="img-box">
+                    <img src="./images/logo.jpg" alt="logo image">
+                </div>
+                <h2>Ali Fakih</h2>
+            </li>
+            <li>
+                <a class="active" href="./profile-dashboard.html">
+                    <i class="fas fa-home"></i>
+                    <p>Profile</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="./course-dashboard.html">
+                    <i class="fas fa-book"></i>
+                    <p>Courses</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="./student-dashboard.html">
+                    <i class="fas fa-user-group"></i>
+                    <p>Students</p>
+                </a>
+            </li>
+            <li>
+                <a href="./exam-dashboard.html">
+                    <i class="fas fa-pencil-alt"></i>
+                    <p>Exams</p>
+                </a>
+            </li>
+            <li>
+                <a href="./grades-dashboard.html">
+                    <i class="fas fa-graduation-cap"></i>
+                    <p>Grades</p>
+                </a>
+            </li>
+            <li>
+                <a href="./assignment-dashboard.html">
+                    <i class="fas fa-tasks"></i>
+                    <p>Assignemts</p>
+                </a>
+            </li>
+            <li>
+                <a href="./attendence-dashboard.html">
+                    <i class="fas fa-user-check"></i>
+                    <p>Attendance</p>
+                </a>
+            </li>
+            <li class="log-out">
+                <a href="#">
+                    <i class="fas fa-sign-out"></i>
+                    <p>Log Out</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="cont-skill">
+            <aside>
+
+                <!-----------------------   Profle Section starts    -------------------------------------------------------------------------------->
+                <div class="profilee">
+                    <div class="top">
+                        <div class="profilee-photo">
+                            <img src="./images/teacher2.jpg" alt="">
+                        </div>
+                        <div class="para-detials">
+                            <p>Hey, <b>Sara</b> </p>
+                            <small class="text-muted">20235061</small>
+                        </div>
+                    </div>
+                    <div class="about">
+                        <h5>Major</h5>
+                        <p>BTech. Computer Science & Engineering <i class="fas fa-pencil-alt"></i></p>
+                        <h5>DOB</h5>
+                        <p>29-Feb-1998 <i class="fas fa-pencil-alt"></i></p>
+                        <h5>Contact</h5>
+                        <p>81755763 <i class="fas fa-pencil-alt"></i></p>
+                        <h5>Email</h5>
+                        <p>unknown@gmail.com <i class="fas fa-pencil-alt"></i></p>
+                        <h5>Address</h5>
+                        <p>Ghost town Road, New York, America <i class="fas fa-pencil-alt"></i></p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <section class="main">
+            <div class="main-top">
+                <h1><i class="fas fa-user-group"></i>Teacher's Courses</h1>
+            </div>
+
+            <div class="main-skills">
+                <!-- first card -->
+                <div class="card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <img src="./images/teacher.jpg">
+                    <h4>Dr Evan Turner</h4>
+                    <a href="./profile-dashboard.html"><button>View</button></a>
+                </div>
+
+                <!-- second card -->
+                <div class="card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Computer Science</h3>
+                    <img src="./images/teacher2.jpg">
+                    <h4>Dr Mia Jones</h4>
+                    <a href="./profile-dashboard.html"><button>View</button></a>
+                </div>
+
+                <!-- third card -->
+                <div class="card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI Design</h3>
+                    <img src="./images/teacher1.jpg">
+                    <h4>Dr Mia Jones</h4>
+                    <a href="./profile-dashboard.html"><button>View</button></a>
+                </div>
+
+                <!-- 4th card -->
+                <div class="card">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Marketing</h3>
+                    <img src="./images/teacher3.jpg">
+                    <h4>Dr Carla Shadad</h4>
+                    <a href="./profile-dashboard.html"><button>View</button></a>
+                </div>
+
+            </div>
+
+            <section class="main-course">
+                <h2 class="sch"><i class="fas fa-book"></i>My Courses</h2>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"
+                            onclick="showInProgress()">In Progress</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab"
+                            onclick="showExplore()">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab"
+                            onclick="showIncoming()">Incoming</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab"
+                            onclick="showFinished()">Finished</a>
+                    </li>
+                </ul>
+
+                <div id="inProgress" class="course">
+                    <div class="box">
+                        <h3>HTML</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fab fa-html5 html"></i>
+                    </div>
+                    <div class="box">
+                        <h3>CSS</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fab fa-css3-alt css"></i>
+                    </div>
+                    <div class="box">
+                        <h3>Node JS</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fab fa-node-js node-js"></i>
+                    </div>
+                </div>
+
+                <div id="explore" class="course" style="display: none;">
+                    <div class="box">
+                        <h3>SQL</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fas fa-database sql"></i>
+                    </div>
+                    <div class="box">
+                        <h3>Swift</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fab fa-swift swift"></i>
+                    </div>
+                    <div class="box">
+                        <h3>Java Script</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fab fa-js-square javascript"></i>
+                    </div>
+                </div>
+
+                <div id="incoming" class="course" style="display: none;">
+                    <div class="box">
+                        <h3>Python</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fab fa-python python"></i>
+                    </div>
+                    <div class="box">
+                        <h3>C++</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fab fa-cuttlefish cpp"></i>
+                    </div>
+                    <div class="box">
+                        <h3>Java</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fab fa-java java"></i>
+                    </div>
+                </div>
+
+                <div id="finished" class="course" style="display: none;">
+                    <div class="box">
+                        <h3>C#</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fab fa-windows csharp"></i>
+                    </div>
+                    <div class="box">
+                        <h3>Database</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fas fa-database database1"></i>
+                    </div>
+                    <div class="box">
+                        <h3>PL/SQL</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fas fa-database database"></i>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+
+    </div>
+
+
+
+
+    <script>
+
+        function showInProgress() {
+            document.getElementById("inProgress").style.display = "flex";
+            document.getElementById("explore").style.display = "none";
+            document.getElementById("incoming").style.display = "none";
+            document.getElementById("finished").style.display = "none";
+        }
+
+        function showExplore() {
+            document.getElementById("inProgress").style.display = "none";
+            document.getElementById("explore").style.display = "flex";
+            document.getElementById("incoming").style.display = "none";
+            document.getElementById("finished").style.display = "none";
+        }
+        function showIncoming() {
+            document.getElementById("inProgress").style.display = "none";
+            document.getElementById("explore").style.display = "none";
+            document.getElementById("incoming").style.display = "flex";
+            document.getElementById("finished").style.display = "none";
+        }
+
+        function showFinished() {
+            document.getElementById("inProgress").style.display = "none";
+            document.getElementById("explore").style.display = "none";
+            document.getElementById("incoming").style.display = "none";
+            document.getElementById("finished").style.display = "flex";
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

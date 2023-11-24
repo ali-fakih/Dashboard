@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #001;
+    display: flex;
+}
+
+.grade-input {
+    width: 450px;
+    max-height:60%;
+    margin: 20px auto;
+    background-color: #f44949;
+    border-radius: 15px 50px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    
+}
+
+  /*----------------------
+     header's card start
+  -----------------------*/
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:5px;
+  }
+
+  .header span {
+    color: whitesmoke;
+    font-weight:bold;
+  }
+
+  .user-profile {
+    display: flex;
+    align-items: center;
+  }
+
+  .user-profile img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+ input::placeholder {
+    color: darkblue;
+}
+/*-------------------
+  header's card ends
+---------------------*/
+
+/* container that contain the content*/
+  .class-list {
+    margin-top: 10px;
+  }
+
+  .class-item {
+    background-color: #001;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+/* Add this style to your CSS */
+.class-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.class-info div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.class-info p {
+    margin: 0;
+    color: #f44949;
+    font-weight:bold;
+}
+
+.class-info input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px; /* Adjust the width as per your requirement */
+    text-align: center;
+}
+.class-info input[placeholder="cs100"] {
+    width: 30%; /* Adjust the width as per your requirement */
+}
+
+  .student-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    /* border:3px solid gray; */
+    margin-bottom:0;
+}
+
+  .student-list th,
+  .student-list td {
+    border-collapse:collapse;
+    padding: 8px;
+    text-align: center;
+    color: #fff;
+    /* border:1px solid white; */
+  }
+
+  .student-list th {
+    background-color: #f44949;
+    text-align:center;
+  }
+
+  .grade-input input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    background-color:gray;
+  }
+
+  .grade-input button {
+    color: whitesmoke;
+    background-color: #001;
+    font-size:18px;
+    font-weight: bold;
+    padding:5px;
+    border-top:0;
+    border-bottom:0;
+    border-right:4px solid gray;
+    border-left:4px solid gray;
+    border-radius:10px;
+    border-radius: 0 20px 0 20px;
+    align-items:center;
+  }
+  .grade-input button i{
+    margin-right:5px;
+    font-size:18px;
+    color:#f44949;
+    font-weight:bold;
+  }
+
+  .grade-input button:hover {
+    background-color: darkblue;
+  }

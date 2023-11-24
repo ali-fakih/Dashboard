@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/dashboard-menu.css">
+    <link rel="stylesheet" href="./css/grades-dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <title>Grades</title>
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+
+            <li class="profile">
+                <div class="img-box">
+                    <img src="./images/logo.jpg" alt="logo image">
+                </div>
+                <h2>Ali Fakih</h2>
+            </li>
+            <li>
+                <a class="active" href="./profile-dashboard.html">
+                    <i class="fas fa-home"></i>
+                    <p>Profile</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="./course-dashboard.html">
+                    <i class="fas fa-book"></i>
+                    <p>Courses</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="./student-dashboard.html">
+                    <i class="fas fa-user-group"></i>
+                    <p>Students</p>
+                </a>
+            </li>
+            <li>
+                <a href="./exam-dashboard.html">
+                    <i class="fas fa-pencil-alt"></i>
+                    <p>Exams</p>
+                </a>
+            </li>
+            <li>
+                <a href="./grades-dashboard.html">
+                    <i class="fas fa-graduation-cap"></i>
+                    <p>Grades</p>
+                </a>
+            </li>
+            <li>
+                <a href="./assignment-dashboard.html">
+                    <i class="fas fa-tasks"></i>
+                    <p>Assignemts</p>
+                </a>
+            </li>
+            <li>
+                <a href="./attendence-dashboard.html">
+                    <i class="fas fa-user-check"></i>
+                    <p>Attendance</p>
+                </a>
+            </li>
+            <li class="log-out">
+                <a href="#">
+                    <i class="fas fa-sign-out"></i>
+                    <p>Log Out</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="grade-input">
+        <div class="header">
+            <div class="user-profile">
+                <img src="./images/teacher2.jpg" alt="Teacher Avatar">
+                <span>Dr Sara Jones</span>
+            </div>
+        </div>
+
+        <div class="class-list">
+            <div class="class-item">
+                <div class="class-info">
+                    <div>
+                        <p>Material Code:</p>
+                        <input type="text" placeholder="cs100">
+                    </div>
+                    <div>
+                        <p>Subject:</p>
+                        <input type="text" placeholder="General Information">
+                    </div>
+                </div>
+                
+                <div class="student-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Full Name</th>
+                                <th>Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" placeholder="ID"></td>
+                                <td><input type="text" placeholder="Name"></td>
+                                <td><input type="text" placeholder="Grade"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" placeholder="ID"></td>
+                                <td><input type="text" placeholder="Name"></td>
+                                <td><input type="text" placeholder="Grade"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" placeholder="ID"></td>
+                                <td><input type="text" placeholder="Name"></td>
+                                <td><input type="text" placeholder="Grade"></td>
+                            </tr>
+                          
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <button><i class="fas fa-save"></i> Save Grades</button>
+            <button><i class="fas fa-pencil-alt"></i>Edit</button>
+            <button><i class="fas fa-trash-alt"></i> Delete</button>
+            <button><i class="fas fa-plus"></i>Add</button>
+
+        </div>
+
+    </div>
+
+    <div class="grade-input">
+        <div class="header">
+            <div class="user-profile">
+                <img src="./images/teacher2.jpg" alt="Teacher Avatar">
+                <span>Dr Sara Jones</span>
+            </div>
+        </div>
+
+        <div class="class-list">
+            <div class="class-item">
+                <div class="class-info">
+                    <div>
+                        <p>Material Code:</p>
+                        <input type="text" placeholder="cs100" id="#code">
+                    </div>
+                    <div>
+                        <p>Subject:</p>
+                        <input type="text" placeholder="General Information">
+                    </div>
+                </div>
+
+                <div class="student-list">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Full Name</th>
+                                <th>Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" placeholder="ID"></td>
+                                <td><input type="text" placeholder="Name"></td>
+                                <td><input type="text" placeholder="Grade"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" placeholder="ID"></td>
+                                <td><input type="text" placeholder="Name"></td>
+                                <td><input type="text" placeholder="Grade"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" placeholder="ID"></td>
+                                <td><input type="text" placeholder="Name"></td>
+                                <td><input type="text" placeholder="Grade"></td>
+                            </tr>
+                          
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <button><i class="fas fa-save"></i> Save Grades</button>
+            <button><i class="fas fa-pencil-alt"></i>Edit</button>
+            <button><i class="fas fa-trash-alt"></i> Delete</button>
+            <button><i class="fas fa-plus"></i>Add</button>
+
+        </div>
+
+    </div>
+
+
+
+
+    </body>
+
+</html>

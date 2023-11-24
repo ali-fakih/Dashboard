@@ -1,0 +1,360 @@
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #001;
+    display: flex;
+}
+
+.container {
+    display: flex;
+}
+
+/*-------------------------
+    Profile Section begin
+---------------------------*/
+.profilee {
+    display: flex;
+    flex-direction: column; /* Adjust the direction to be column */
+    align-items: center;
+    gap: 10px;
+    width:300px;
+}
+
+.profilee .top {
+    display: flex;
+    align-items: left; /* Align items to the center */
+    gap: 15px;
+    margin-left: 0px;
+    margin-top:10px;
+    
+
+}
+
+.profilee .top .profilee-photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid whitesmoke;
+    margin-left: 0px;
+}
+
+.profilee .top img {
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profilee .top .para-detials p b{
+    color:#f44949;
+}
+
+.profilee .top .para-detials .text-muted{
+    color:gray;
+    margin-left: 10px;
+}
+
+.profilee p {
+    font-size: 15px;
+    margin: 0; /* Reset default margin for p element */
+}
+
+/*-------------------------
+    Profile Section end
+---------------------------*/
+
+
+/*-------------------------
+    About Section begin
+---------------------------*/
+
+/* Additional styles for the profile details in .about */
+.profilee .about h5 {
+    color: #f44949;
+    margin-bottom: 10px;
+}
+
+.profilee .about p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.profilee .about {
+    margin: 10px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.about p i {
+    margin-left: 10px;
+}
+
+/*-------------------------
+    about Section ends
+---------------------------*/
+
+/*teachers section begin */
+.main .main-top h1 {
+    margin-top: 10px;
+}
+
+.main .main-top h1 i {
+    margin-right: 5px;
+    color: #f44949;
+}
+
+/* Cards container*/
+.main-skills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Cards and their elements*/
+.main .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 15px 50px 20px;
+    flex: 1;
+    width: 200px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.main .card h3 {
+    color: #f44949;
+    margin-bottom: 15px;
+    padding: 5px;
+    text-align: center; /* Center text horizontally */
+    margin-top:15px;
+
+}
+
+.main .card i {
+    position: absolute;
+    top: 8px; /* Adjust the top position based on your design */
+    left: 10px; /* Adjust the left position based on your design */
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.main .card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.main .card h4 {
+    color: #f44949;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.main .card button {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 10px;
+    background-color: gray;
+    border: 2px solid #f44949;
+    border-radius: 15px 50px;
+    margin-bottom: 5px;
+}
+
+/*---------------------
+  cards Section Ends
+-----------------------*/
+.main-course{
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+/*-----------------------
+  Nav Section starts
+ ------------------------- */
+ .sch{
+    display:flex;
+    margin-left:20px;
+    margin-bottom:5px;
+    margin-top: 10px;
+}
+.sch i{
+    color:#f44949;
+    margin-right:9px;
+}
+ul.nav.nav-tabs {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #f44949;
+    background-color:#f44949;
+    border-radius: 10px 25px 15px;
+    margin-bottom:5px;
+
+}
+
+/* Adjust the styles for the nav-item and nav-link */
+ul.nav.nav-tabs li.nav-item {
+    border-right: 2px solid #123;
+    flex-grow: 1;
+    text-align: center;
+    border-top-right-radius: 20px ;
+    font-size: 16px;
+    font-weight:bold;
+
+}
+
+ul.nav.nav-tabs li.nav-item:last-child {
+    border-right: none;
+}
+/* for the content inside the nav tab*/
+ul.nav.nav-tabs li.nav-item a.nav-link {
+    padding: 14px 15px; 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+ul.nav.nav-tabs li.nav-item a.nav-link.active {
+    border-radius: 2px;
+    border-bottom: none;
+}
+
+ul.nav.nav-tabs li.nav-item a.nav-link.active h5,
+ul.nav.nav-tabs li.nav-item a.nav-link.active p {
+    color: #ffffff;
+}
+
+ul.nav.nav-tabs li.nav-item a.nav-link h5 {
+    color: #171822;
+    font-weight: 600;
+}
+
+ul.nav.nav-tabs li.nav-item a.nav-link p {
+    margin-bottom: 0;
+}
+/*-----------------------
+  Nav Section ends
+ ------------------------- */
+
+
+
+/*----------------------
+  Course Section starts
+------------------------*/
+
+
+.course {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 0 0 28%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: gray;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.box p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.box button {
+    background-color: black;
+    color: #f44949;
+    padding: 7px 10px;
+    border-radius: 10px 20px;
+    margin-top: 3rem;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.box button:hover {
+    background: whitesmoke;
+}
+
+.box i {
+    font-size: 7rem;
+    float: right;
+    margin: -20px 20px 20px 0;
+}
+
+/* colors of html, css, node js icons start */
+.html {
+    color: darkred;
+}
+
+.css {
+    color: #123;
+}
+
+.node-js {
+    color: darkblue;
+}
+
+
+.sql {
+    color: black;
+}
+
+.swift {
+    color: #f44949;
+}
+
+.javascript {
+    color: darkblue;
+}
+
+.python {
+    color: black;
+}
+
+.cpp {
+    color: #f44949;
+}
+
+.java {
+    color: darkblue;
+}
+
+.csharp {
+    color: black;
+}
+
+.database1 {
+    color: blue;
+}
+
+.database {
+    color: darkred;
+}
+
+/* colors for html,css and nodejs ends*/
+
+
+
+
+
+
+
+
+
+

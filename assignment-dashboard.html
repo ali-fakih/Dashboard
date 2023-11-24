@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/dashboard-menu.css">
+    <link rel="stylesheet" href="./css/assignments-dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <title>Assignments</title>
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+
+            <li class="profile">
+                <div class="img-box">
+                    <img src="./images/logo.jpg" alt="logo image">
+                </div>
+                <h2>Ali Fakih</h2>
+            </li>
+            <li>
+                <a class="active" href="./profile-dashboard.html">
+                    <i class="fas fa-home"></i>
+                    <p>Profile</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="./course-dashboard.html">
+                    <i class="fas fa-book"></i>
+                    <p>Courses</p>
+                </a>
+            </li>
+
+            <li>
+                <a href="./student-dashboard.html">
+                    <i class="fas fa-user-group"></i>
+                    <p>Students</p>
+                </a>
+            </li>
+            <li>
+                <a href="./exam-dashboard.html">
+                    <i class="fas fa-pencil-alt"></i>
+                    <p>Exams</p>
+                </a>
+            </li>
+            <li>
+                <a href="./grades-dashboard.html">
+                    <i class="fas fa-graduation-cap"></i>
+                    <p>Grades</p>
+                </a>
+            </li>
+            <li>
+                <a href="./assignment-dashboard.html">
+                    <i class="fas fa-tasks"></i>
+                    <p>Assignemts</p>
+                </a>
+            </li>
+            <li>
+                <a href="./attendence-dashboard.html">
+                    <i class="fas fa-user-check"></i>
+                    <p>Attendance</p>
+                </a>
+            </li>
+            <li class="log-out">
+                <a href="#">
+                    <i class="fas fa-sign-out"></i>
+                    <p>Log Out</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="cont-skill">
+            <aside>
+
+                <!-----------------------   Profle Section starts    -------------------------------------------------------------------------------->
+                <div class="profilee">
+                    <div class="top">
+                        <div class="profilee-photo">
+                            <img src="./images/teacher.jpg" alt="">
+                        </div>
+                        <div class="para-detials">
+                            <p>Hey, <b>Dr Ali</b> </p>
+                            <small class="text-muted">20235061</small>
+                        </div>
+                    </div>
+                    <div class="about">
+                        <div class="doctor-leave-announcements">
+                            <h4>Doctor Leave Announcements</h4>
+                            <div class="announcements">
+                                <div class="message">
+                                    <div class="message-container">
+                                        <img src="./images/teacher3.jpg" alt="Dr. Smith's Photo">
+                                        <p><b>Dr. Smith</b> will be on leave for a medical conference.</p>
+                                    </div>
+                                    <small class="text-muted">2 Minutes Ago</small>
+                                </div>
+                                
+                                <div class="message">
+                                    <div class="message-container">
+                                        <img src="./images/teacher1.jpg" alt="Dr. Smith's Photo">
+                                        <p><b>Dr. Smith</b> will be on leave for a medical conference.</p>
+                                    </div>
+                                    <small class="text-muted">2 Minutes Ago</small>
+                                </div>
+                                
+                                <div class="message">
+                                    <div class="message-container">
+                                        <img src="./images/teacher2.jpg" alt="Dr. Smith's Photo">
+                                        <p><b>Dr. Smith</b> will be on leave for a medical conference.</p>
+                                    </div>
+                                    <small class="text-muted">2 Minutes Ago</small>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <section class="main">
+            <div class="main-top">
+                <h1><i class="fas fa-user-group"></i>Courses</h1>
+            </div>
+
+            <section class="main-course">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab"
+                            onclick="showInProgress()">In Progress</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab"
+                            onclick="showExplore()">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab"
+                            onclick="showIncoming()">Incoming</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab"
+                            onclick="showFinished()">Finished</a>
+                    </li>
+                </ul>
+
+                <div id="inProgress" class="course">
+                    <div class="box">
+                        <h3>HTML</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fab fa-html5 html"></i>
+                    </div>
+                    <div class="box">
+                        <h3>CSS</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fab fa-css3-alt css"></i>
+                    </div>
+                    <div class="box">
+                        <h3>Node JS</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fab fa-node-js node-js"></i>
+                    </div>
+                </div>
+
+                <div id="explore" class="course" style="display: none;">
+                    <div class="box">
+                        <h3>SQL</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fas fa-database sql"></i>
+                    </div>
+                    <div class="box">
+                        <h3>Swift</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fab fa-swift swift"></i>
+                    </div>
+                    <div class="box">
+                        <h3>Java Script</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fab fa-js-square javascript"></i>
+                    </div>
+                </div>
+
+                <div id="incoming" class="course" style="display: none;">
+                    <div class="box">
+                        <h3>Python</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fab fa-python python"></i>
+                    </div>
+                    <div class="box">
+                        <h3>C++</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fab fa-cuttlefish cpp"></i>
+                    </div>
+                    <div class="box">
+                        <h3>Java</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fab fa-java java"></i>
+                    </div>
+                </div>
+
+                <div id="finished" class="course" style="display: none;">
+                    <div class="box">
+                        <h3>C#</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fab fa-windows csharp"></i>
+                    </div>
+                    <div class="box">
+                        <h3>Database</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fas fa-database database1"></i>
+                    </div>
+                    <div class="box">
+                        <h3>PL/SQL</h3>
+                        <p>80% - progress</p>
+                        <button>continue</button>
+                        <i class="fas fa-database database"></i>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="attendance">
+                <div class="attendance-list">
+                    <div class="cont">
+                        <h1>Assignments List</h1>
+                        <a href="#" class="customButton"><button>Add<i class="fas fa-plus"></i></button></a>
+                    </div>            
+                    <table class="table-attend">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Course</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>Sam David</td>
+                                <td>HTML</td>
+                                <td>23-03-23</td>
+                                <td>
+                                    <select class="option">
+                                        <option></option>
+                                        <option value="pending">Pending</option>
+                                        <option value="ongoing">Ongoing</option>
+                                        <option value="finished">Finished</option>
+                                        <option value="freezed">Freezed</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <i class="fas fa-pencil-alt"></i>
+                                    <i class="fas fa-trash-alt"></i>
+                                </td>
+                            </tr>
+                    
+                            <tr class="active">
+                                <td>02</td>
+                                <td>Fatima David</td>
+                                <td>Java</td>
+                                <td>23-03-23</td>
+                                <td>
+                                    <select class="option">
+                                        <option></option>
+                                        <option value="pending">Pending</option>
+                                        <option value="ongoing">Ongoing</option>
+                                        <option value="finished">Finished</option>
+                                        <option value="freezed">Freezed</option>
+                                    </select>
+                                </td>
+                                <td class="hover-bg">
+                                    <i class="fas fa-pencil-alt"></i>
+                                    <i class="fas fa-trash-alt"></i>
+                                </td>
+                            </tr>
+                    
+                            <tr>
+                                <td>03</td>
+                                <td>Alex Smith</td>
+                                <td>Node Js</td>
+                                <td>23-03-23</td>
+                                <td>
+                                    <select class="option">
+                                        <option></option>
+                                        <option value="pending">Pending</option>
+                                        <option value="ongoing">Ongoing</option>
+                                        <option value="finished">Finished</option>
+                                        <option value="freezed">Freezed</option>
+                                    </select>
+                                </td>
+                                <td class="hover-bg">
+                                    <i class="fas fa-pencil-alt"></i>
+                                    <i class="fas fa-trash-alt"></i>
+                                </td>
+                            </tr>
+                    
+                            <!-- Add more rows as needed -->
+                    
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </section>
+        </section>
+
+       
+    </div>
+
+
+
+    
+
+    <script>
+
+        function showInProgress() {
+            document.getElementById("inProgress").style.display = "flex";
+            document.getElementById("explore").style.display = "none";
+            document.getElementById("incoming").style.display = "none";
+            document.getElementById("finished").style.display = "none";
+        }
+
+        function showExplore() {
+            document.getElementById("inProgress").style.display = "none";
+            document.getElementById("explore").style.display = "flex";
+            document.getElementById("incoming").style.display = "none";
+            document.getElementById("finished").style.display = "none";
+        }
+        function showIncoming() {
+            document.getElementById("inProgress").style.display = "none";
+            document.getElementById("explore").style.display = "none";
+            document.getElementById("incoming").style.display = "flex";
+            document.getElementById("finished").style.display = "none";
+        }
+
+        function showFinished() {
+            document.getElementById("inProgress").style.display = "none";
+            document.getElementById("explore").style.display = "none";
+            document.getElementById("incoming").style.display = "none";
+            document.getElementById("finished").style.display = "flex";
+        }
+
+    </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Wait for the document to be fully loaded
+
+        // Get all tabs in the navigation
+        var tabs = document.querySelectorAll('.nav-link[data-toggle="tab"]');
+
+        // Get all table tabs
+        var tableTabs = document.querySelectorAll('.tab-pane');
+
+        // Hide all tables initially
+        tableTabs.forEach(function (table) {
+            table.style.display = 'none';
+        });
+
+        // Show the first table initially
+        document.querySelector('.tab-pane').style.display = 'block';
+
+        // Add click event listener to each tab
+        tabs.forEach(function (tab) {
+            tab.addEventListener('click', function (event) {
+                // Prevent the default behavior of the anchor tag
+                event.preventDefault();
+
+                // Get the target table id from the href attribute
+                var targetTableId = tab.getAttribute('href').substr(1);
+
+                // Hide all tables
+                tableTabs.forEach(function (table) {
+                    table.style.display = 'none';
+                });
+
+                // Show the target table
+                document.getElementById(targetTableId).style.display = 'block';
+            });
+        });
+    });
+
+</script>
+
+</body>
+
+</html>
