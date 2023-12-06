@@ -222,13 +222,9 @@
     document.addEventListener('DOMContentLoaded', function () {
     // Select all cards and toggle buttons
     let cards = document.querySelectorAll('.card');
-
-    // Loop through each card and add click event listener
     cards.forEach((card) => {
         let toggle = card.querySelector('.toggle');
-
         toggle.onclick = function () {
-            // Toggle the 'open' class for the clicked card
             card.classList.toggle('open');
         };
     });
